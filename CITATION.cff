@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Nelson"
+    given-names: "Daniel"
+    orcid: "https://orcid.org/0009-0005-5200-6652"
+title: "Oakville Land Use Classification"
+version: 0.5
+date-released: 2024-07-07
+url: "https://github.com/DanGeospatial/Oakville-Land-Use-Classification"
