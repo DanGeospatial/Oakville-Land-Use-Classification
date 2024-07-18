@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c14388db-e3ce-44db-85fb-1db4bd8df4ee" name="Changes" comment="Create project structure">
-      <change afterPath="$PROJECT_DIR$/Models/Simple_CNN.py" afterDir="false" />
+    <list default="true" id="c14388db-e3ce-44db-85fb-1db4bd8df4ee" name="Changes" comment="define cnn">
+      <change afterPath="$PROJECT_DIR$/utils/dataset.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Simple_CNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Simple_CNN.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Plotter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Train.py" beforeDir="false" afterPath="$PROJECT_DIR$/Train.py" afterDir="false" />
     </list>
@@ -25,18 +26,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "DanGeospatial"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DanGeospatial&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/DanGeospatial/Oakville-Land-Use-Classification",
-    "accountId": "1040b4ab-c031-45e2-873c-25f2a84d1a63"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/DanGeospatial/Oakville-Land-Use-Classification&quot;,
+    &quot;accountId&quot;: &quot;1040b4ab-c031-45e2-873c-25f2a84d1a63&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -93,7 +94,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720402006590</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="define cnn">
+      <option name="closed" value="true" />
+      <created>1720404685769</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720404685769</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,6 +118,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create project structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create project structure" />
+    <MESSAGE value="define cnn" />
+    <option name="LAST_COMMIT_MESSAGE" value="define cnn" />
   </component>
 </project>
