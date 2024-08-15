@@ -1,4 +1,0 @@
-
-def Loader(file):
-    None
-
