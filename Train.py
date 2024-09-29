@@ -13,11 +13,11 @@ from torch.optim import Optimizer
 
 
 # Import other libraries
-import evaluate
 from sklearn.metrics import classification_report
 
 # Import algorithms
 from Models.Simple_CNN import Net
+from utils.validation_accuracy import evaluate_accuracy
 from utils.dataset_Oakville_V1 import train_set, test_set, validation_set, getLength
 
 num_classes = 3
@@ -28,7 +28,6 @@ weight_decay = 1e-8
 momentum = 0.999
 mem_args = dict(memory_format=torch.channels_last)
 out_path = "I:/LandUseClassification.pth"
-accuracy = evaluate.load("accuracy")
 
 
 def train_model(model, device_hw, epoch_num, lr, wd, mom):
@@ -70,7 +69,7 @@ def train_model(model, device_hw, epoch_num, lr, wd, mom):
             step_div = (getLength() // (5 * 10))
             if step_div > 0:
                 if step_glob % step_div == 0:
-                    validation_score = accuracy.compute(model, validation_set, device_hw)
+                    validation_score = evaluate_accuracy(model, validation_set, device_hw)
                     scheduler.step(validation_score)
 
                     print("Validation Score: ", validation_score)
