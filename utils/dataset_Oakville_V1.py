@@ -1,3 +1,4 @@
+import os
 from pathlib import PureWindowsPath
 from torch.utils.data import random_split, DataLoader
 from utils.DataLoad import Loader
@@ -5,6 +6,8 @@ from utils.DataLoad import Loader
 # Load file paths for v1 data
 chips = PureWindowsPath('I:/OakvilleClassificationv1/images')
 masks = PureWindowsPath('I:/OakvilleClassificationv1/labels')
+
+loader_args = dict(num_workers=os.cpu_count(), pin_memory=True)
 
 validation_ratio = 0.20
 test_ratio = 0.20
@@ -22,6 +25,6 @@ train, validation, test = random_split(dataset, [(dataset.__len__() - (test_coun
                                                  ])
 
 # Load train, test and validation datasets
-train_set = DataLoader(train, batch_size=batch_size, shuffle=True)
-test_set = DataLoader(test, batch_size=batch_size, shuffle=True)
-validation_set = DataLoader(validation, batch_size=batch_size, shuffle=True)
+train_set = DataLoader(train, batch_size=batch_size, shuffle=True, **loader_args)
+test_set = DataLoader(test, batch_size=batch_size, shuffle=True, **loader_args)
+validation_set = DataLoader(validation, batch_size=batch_size, shuffle=False, **loader_args)

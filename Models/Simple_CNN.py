@@ -7,14 +7,17 @@ import torch.nn.functional as fn
 
 
 class Net(nn.Module):
-    def __init__(self):
+    def __init__(self, bands, classes):
         super().__init__()
-        self.conv1 = nn.Conv2d(3, 12, 3, 1, 1)
+        self.bands = bands
+        self.classes = classes
+
+        self.conv1 = nn.Conv2d(bands, 12, 3, 1, 1)
         self.pool = nn.MaxPool2d(2, 2)
         self.conv2 = nn.Conv2d(12, 12, 3, 1, 1)
         self.conv3 = nn.Conv2d(12, 24, 3, 1, 1)
         self.drop = nn.Dropout2d(p=0.2)
-        self.fc = nn.Linear(in_features=64 * 64 * 24, out_features=3)
+        self.fc = nn.Linear(in_features=64 * 64 * 24, out_features=classes)
 
     def forward(self, x):
         x = fn.relu(self.pool(self.conv1(x)))

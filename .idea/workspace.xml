@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c14388db-e3ce-44db-85fb-1db4bd8df4ee" name="Changes" comment="fix DataLoad.py I think">
+    <list default="true" id="c14388db-e3ce-44db-85fb-1db4bd8df4ee" name="Changes" comment="build dataloader">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Simple_CNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Simple_CNN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train.py" beforeDir="false" afterPath="$PROJECT_DIR$/Train.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/dataset_Oakville_V1.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/dataset_Oakville_V1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -147,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727569792643</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="build dataloader">
+      <option name="closed" value="true" />
+      <created>1727570724565</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1727570724565</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,6 +179,7 @@
     <MESSAGE value="update README.md" />
     <MESSAGE value="build loader" />
     <MESSAGE value="fix DataLoad.py I think" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix DataLoad.py I think" />
+    <MESSAGE value="build dataloader" />
+    <option name="LAST_COMMIT_MESSAGE" value="build dataloader" />
   </component>
 </project>
