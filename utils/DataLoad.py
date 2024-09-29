@@ -1,5 +1,6 @@
 import os
 import rasterio
+import numpy as np
 from torch.utils.data import Dataset
 from torchvision.transforms import ToTensor
 from sklearn.preprocessing import MinMaxScaler
@@ -16,13 +17,14 @@ class Loader(Dataset):
         image_file = self.images[item]
 
         image = rasterio.open((self.image_folder + image_file))
-        image = ToTensor()(image.read())
-
+        image = np.array(image.read())
         image = MinMaxScaler().fit_transform(image)
+        image = ToTensor()(image)
 
         label_file = self.labels[item]
         label = rasterio.open((self.label_folder + label_file))
-        label = ToTensor()(image.read())
+        label = np.array(label.read())
+        label = ToTensor()(label)
 
         return image, label
 
