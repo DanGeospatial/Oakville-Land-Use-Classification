@@ -93,6 +93,7 @@ if __name__ == '__main__':
     try:
         train_model(
             model=network,
+            device_hw=device,
             epoch_num=epochs,
             lr=learning_rate,
             wd=weight_decay,
