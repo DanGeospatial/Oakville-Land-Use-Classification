@@ -1,16 +1,13 @@
 """
 Train the land use dataset with 3 classes and 4 image bands
+Currently using RMSprop instead of adam optimizer
 """
 
 # Import PyTorch libraries
 import torch
-import torchvision
 import torch.nn as nn
-import torch.nn.functional as fn
-import torchvision.transforms as tf
 from torch import device, cuda, optim, autocast, save
 from torch.optim import Optimizer
-
 
 # Import other libraries
 from sklearn.metrics import classification_report
