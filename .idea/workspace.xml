@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c14388db-e3ce-44db-85fb-1db4bd8df4ee" name="Changes" comment="create training">
-      <change afterPath="$PROJECT_DIR$/utils/validation_accuracy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train.py" beforeDir="false" afterPath="$PROJECT_DIR$/Train.py" afterDir="false" />
-    </list>
+    <list default="true" id="c14388db-e3ce-44db-85fb-1db4bd8df4ee" name="Changes" comment="bug fixes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -173,7 +169,31 @@
       <option name="project" value="LOCAL" />
       <updated>1727579845088</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="validation_accuracy.py needs to be finished">
+      <option name="closed" value="true" />
+      <created>1727580999939</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1727580999939</updated>
+    </task>
+    <task id="LOCAL-00014" summary="bug fix">
+      <option name="closed" value="true" />
+      <created>1727581065706</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1727581065706</updated>
+    </task>
+    <task id="LOCAL-00015" summary="bug fixes">
+      <option name="closed" value="true" />
+      <created>1727581207838</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1727581207838</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,6 +217,9 @@
     <MESSAGE value="build dataloader" />
     <MESSAGE value="bug fixes and expand settings" />
     <MESSAGE value="create training" />
-    <option name="LAST_COMMIT_MESSAGE" value="create training" />
+    <MESSAGE value="validation_accuracy.py needs to be finished" />
+    <MESSAGE value="bug fix" />
+    <MESSAGE value="bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixes" />
   </component>
 </project>

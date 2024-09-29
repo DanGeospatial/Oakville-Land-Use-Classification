@@ -10,12 +10,11 @@ from torch import device, cuda, optim, autocast, save
 from torch.optim import Optimizer
 
 # Import other libraries
-from sklearn.metrics import classification_report
 
 # Import algorithms
 from Models.Simple_CNN import Net
 from utils.validation_accuracy import evaluate_accuracy
-from utils.dataset_Oakville_V1 import train_set, test_set, validation_set, getLength
+from Data.dataset_Oakville_V1 import train_set, validation_set, getLength
 
 num_classes = 3
 num_bands = 4
@@ -31,7 +30,7 @@ def train_model(model, device_hw, epoch_num, lr, wd, mom):
 
     # Set the optimizer and learning rate scheduler
     optimizer = optim.RMSprop(model.parameters(), lr=lr, weight_decay=wd, momentum=mom)
-    scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, 'max', patience=5)
+    scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, 'min', patience=5)
     criterion = nn.CrossEntropyLoss()
     gradient_scaler = torch.cuda.amp.GradScaler()
 

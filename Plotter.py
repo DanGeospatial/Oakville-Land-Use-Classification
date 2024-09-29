@@ -3,7 +3,7 @@ This script is for plotting samples of the
 training chips.
 """
 
-from utils.dataset_Oakville_V1 import data, sample
+from Data.dataset_Oakville_V1 import data, sample
 import matplotlib.pyplot as plt
 
 # using 256x256 tensors
