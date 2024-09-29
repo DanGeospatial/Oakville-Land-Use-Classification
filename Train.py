@@ -18,7 +18,7 @@ from sklearn.metrics import classification_report
 
 # Import algorithms
 from Models.Simple_CNN import Net
-from utils.dataset_Oakville_V1 import loader
+from utils.dataset_Oakville_V1 import train_set, test_set, validation_set
 
 print("Using PyTorch version: ", torch.torch_version)
 print("With CUDA version: ", torch.cuda_version)
