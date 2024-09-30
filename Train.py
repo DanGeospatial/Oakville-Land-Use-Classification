@@ -41,8 +41,8 @@ def train_model(model, device_hw, epoch_num, lr, wd, mom):
         model.train()
         epoch_loss = 0
         for images, masks in train_set:
-            images = images.to(device=device_hw, dtype=torch.int32, **mem_args)
-            masks = masks.to(device=device_hw, dtype=torch.int32, **mem_args)
+            images = images.to(device=device_hw, dtype=torch.float32)
+            masks = masks.to(device=device_hw, dtype=torch.float32)
 
             with autocast(device_hw.type):
                 mask_prediction = model(images)
@@ -82,7 +82,7 @@ if __name__ == '__main__':
     print(f"Training on {device}")
 
     network = Net(num_bands, num_classes)
-    network = network.to(device, **mem_args)
+    network = network.to(device)
 
     try:
         train_model(

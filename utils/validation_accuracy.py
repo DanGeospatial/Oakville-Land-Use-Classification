@@ -14,8 +14,8 @@ def evaluate_accuracy(model, valid, device):
     with autocast(device.type):
         for images, mask_validation in valid:
             # Send to correct device
-            image = image.to(device, dtype=torch.int32, **mem_args)
-            mask_validation = mask_validation.to(device, dtype=torch.int32, **mem_args)
+            image = image.to(device, dtype=torch.float32)
+            mask_validation = mask_validation.to(device, dtype=torch.float32)
 
             # Generate predicted mask
             mask_prediction = model(image)
