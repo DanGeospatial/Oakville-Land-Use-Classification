@@ -12,9 +12,7 @@ def evaluate_accuracy(model, valid, device):
     acc_score = 0
 
     with autocast(device.type):
-        for batch in valid:
-            image, mask_validation = batch['image'], batch['mask']
-
+        for images, mask_validation in valid:
             # Send to correct device
             image = image.to(device, **mem_args)
             mask_validation = mask_validation.to(device, **mem_args)

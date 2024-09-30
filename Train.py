@@ -16,7 +16,7 @@ from Models.Simple_CNN import Net
 from utils.validation_accuracy import evaluate_accuracy
 from Data.dataset_Oakville_V1 import train_set, validation_set, getLength
 
-num_classes = 3
+num_classes = 4
 num_bands = 4
 epochs = 40
 learning_rate = 1e-5
@@ -40,9 +40,7 @@ def train_model(model, device_hw, epoch_num, lr, wd, mom):
     for epoch in range(epoch_num):
         model.train()
         epoch_loss = 0
-        for batch in train_set:
-            images, masks = batch['image'], batch['mask']
-
+        for images, masks in train_set:
             images = images.to(device=device_hw, **mem_args)
             masks = masks.to(device=device_hw, **mem_args)
 
@@ -77,7 +75,8 @@ def train_model(model, device_hw, epoch_num, lr, wd, mom):
 
 
 if __name__ == '__main__':
-    print("Using PyTorch version: ", torch.torch_version)
+    # a = torch.cuda.FloatTensor()
+    print("Using PyTorch version: ", torch.__version__)
     print("With CUDA version: ", torch.cuda_version)
 
     device = device('cuda' if cuda.is_available() else 'cpu')

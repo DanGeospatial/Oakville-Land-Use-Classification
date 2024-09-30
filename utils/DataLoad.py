@@ -17,13 +17,15 @@ class Loader(Dataset):
         image_file = self.images[item]
 
         image = rasterio.open((self.image_folder + image_file))
-        image = np.array(image.read())
+        image = np.array(image.read(), dtype='int32')
+        image = image.reshape(-1, image.shape[-1])
         image = MinMaxScaler().fit_transform(image)
         image = ToTensor()(image)
 
         label_file = self.labels[item]
         label = rasterio.open((self.label_folder + label_file))
-        label = np.array(label.read())
+        label = np.array(label.read(), dtype='int32')
+        label = label.reshape(-1, label.shape[-1])
         label = ToTensor()(label)
 
         return image, label

@@ -3,8 +3,8 @@ from torch.utils.data import random_split, DataLoader
 from utils.DataLoad import Loader
 
 # Load file paths for v1 data
-chips = 'I:/OakvilleClassificationv1/images'
-masks = 'I:/OakvilleClassificationv1/labels'
+chips = 'I:/OakvilleClassificationv1/images/'
+masks = 'I:/OakvilleClassificationv1/labels/'
 
 loader_args = dict(num_workers=os.cpu_count(), pin_memory=True)
 

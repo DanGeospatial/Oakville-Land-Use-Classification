@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c14388db-e3ce-44db-85fb-1db4bd8df4ee" name="Changes" comment="bug fixes" />
+    <list default="true" id="c14388db-e3ce-44db-85fb-1db4bd8df4ee" name="Changes" comment="update README.md">
+      <change beforePath="$PROJECT_DIR$/.idea/Oakville-Land-Use-Classification.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Oakville-Land-Use-Classification.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/dataset_Oakville_V1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/dataset_Oakville_V1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train.py" beforeDir="false" afterPath="$PROJECT_DIR$/Train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/DataLoad.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/DataLoad.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/validation_accuracy.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/validation_accuracy.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,17 +51,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Projects/WetlandClassification&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Train.executor": "Run",
+    "Python.dataset_Oakville_V1.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/speed/Downloads/Oakville - Copy.JPG",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\OakvilleLandUse\Oakville-Land-Use-Classification\Data" />
       <recent name="D:\Projects\OakvilleLandUse\Oakville-Land-Use-Classification" />
     </key>
   </component>
@@ -193,7 +204,23 @@
       <option name="project" value="LOCAL" />
       <updated>1727581207838</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="define validation_accuracy.py and fix bugs">
+      <option name="closed" value="true" />
+      <created>1727644047859</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1727644047859</updated>
+    </task>
+    <task id="LOCAL-00017" summary="update README.md">
+      <option name="closed" value="true" />
+      <created>1727647296763</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1727647296763</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,7 +238,6 @@
     <MESSAGE value="Create project structure" />
     <MESSAGE value="define cnn" />
     <MESSAGE value="build training methods" />
-    <MESSAGE value="update README.md" />
     <MESSAGE value="build loader" />
     <MESSAGE value="fix DataLoad.py I think" />
     <MESSAGE value="build dataloader" />
@@ -220,6 +246,8 @@
     <MESSAGE value="validation_accuracy.py needs to be finished" />
     <MESSAGE value="bug fix" />
     <MESSAGE value="bug fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug fixes" />
+    <MESSAGE value="define validation_accuracy.py and fix bugs" />
+    <MESSAGE value="update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
   </component>
 </project>
