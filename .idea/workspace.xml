@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c14388db-e3ce-44db-85fb-1db4bd8df4ee" name="Changes" comment="update README.md">
-      <change beforePath="$PROJECT_DIR$/.idea/Oakville-Land-Use-Classification.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Oakville-Land-Use-Classification.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/dataset_Oakville_V1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/dataset_Oakville_V1.py" afterDir="false" />
+    <list default="true" id="c14388db-e3ce-44db-85fb-1db4bd8df4ee" name="Changes" comment="many bug fixes but still issue in Models.Simple_CNN.py">
       <change beforePath="$PROJECT_DIR$/Train.py" beforeDir="false" afterPath="$PROJECT_DIR$/Train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/DataLoad.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/DataLoad.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/validation_accuracy.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/validation_accuracy.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,17 +45,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Train.executor": "Run",
-    "Python.dataset_Oakville_V1.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/speed/Downloads/Oakville - Copy.JPG",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Train.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dataset_Oakville_V1.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/speed/Downloads/Oakville - Copy.JPG&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projects\OakvilleLandUse\Oakville-Land-Use-Classification\Data" />
@@ -220,7 +214,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727647296763</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="many bug fixes but still issue in Models.Simple_CNN.py">
+      <option name="closed" value="true" />
+      <created>1727714798283</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1727714798283</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,6 +250,7 @@
     <MESSAGE value="bug fixes" />
     <MESSAGE value="define validation_accuracy.py and fix bugs" />
     <MESSAGE value="update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
+    <MESSAGE value="many bug fixes but still issue in Models.Simple_CNN.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="many bug fixes but still issue in Models.Simple_CNN.py" />
   </component>
 </project>

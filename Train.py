@@ -32,7 +32,7 @@ def train_model(model, device_hw, epoch_num, lr, wd, mom):
     optimizer = optim.RMSprop(model.parameters(), lr=lr, weight_decay=wd, momentum=mom)
     scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, 'min', patience=5)
     criterion = nn.CrossEntropyLoss()
-    gradient_scaler = torch.cuda.amp.GradScaler()
+    gradient_scaler = torch.amp.GradScaler()
 
     step_glob = 0
 
@@ -41,8 +41,8 @@ def train_model(model, device_hw, epoch_num, lr, wd, mom):
         model.train()
         epoch_loss = 0
         for images, masks in train_set:
-            images = images.to(device=device_hw, **mem_args)
-            masks = masks.to(device=device_hw, **mem_args)
+            images = images.to(device=device_hw, dtype=torch.int32, **mem_args)
+            masks = masks.to(device=device_hw, dtype=torch.int32, **mem_args)
 
             with autocast(device_hw.type):
                 mask_prediction = model(images)
@@ -75,7 +75,6 @@ def train_model(model, device_hw, epoch_num, lr, wd, mom):
 
 
 if __name__ == '__main__':
-    # a = torch.cuda.FloatTensor()
     print("Using PyTorch version: ", torch.__version__)
     print("With CUDA version: ", torch.cuda_version)
 
