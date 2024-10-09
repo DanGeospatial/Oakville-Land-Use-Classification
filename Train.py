@@ -14,9 +14,9 @@ from torch.optim import Optimizer
 # Import algorithms
 from Models.Simple_CNN import Net
 from utils.validation_accuracy import evaluate_accuracy
-from Data.dataset_Oakville_V1 import train_set, validation_set, getLength
+from Data.dataset_Oakville_v2 import train_set, validation_set, getLength
 
-num_classes = 4
+num_classes = 5
 num_bands = 4
 epochs = 40
 learning_rate = 1e-5
@@ -40,9 +40,11 @@ def train_model(model, device_hw, epoch_num, lr, wd, mom):
     for epoch in range(epoch_num):
         model.train()
         epoch_loss = 0
-        for images, masks in train_set:
-            images = images.to(device=device_hw, dtype=torch.float32)
-            masks = masks.to(device=device_hw, dtype=torch.float32)
+        for batch in train_set:
+            images = batch["image"]
+            masks = batch["mask"]
+            images = images.to(device=device_hw)
+            masks = masks.to(device=device_hw)
 
             with autocast(device_hw.type):
                 mask_prediction = model(images)

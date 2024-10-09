@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Oakville-Land-Use-Classification" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Land-Use-torch" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="TorchGeo" project-jdk-type="Python SDK" />
 </project>

@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c14388db-e3ce-44db-85fb-1db4bd8df4ee" name="Changes" comment="many bug fixes but still issue in Models.Simple_CNN.py">
+    <list default="true" id="c14388db-e3ce-44db-85fb-1db4bd8df4ee" name="Changes" comment="Simple_CNN.py is still broken">
+      <change beforePath="$PROJECT_DIR$/.idea/Oakville-Land-Use-Classification.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Oakville-Land-Use-Classification.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/dataset_Oakville_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/dataset_Oakville_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Simple_CNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Simple_CNN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/unet.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/unet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Train.py" beforeDir="false" afterPath="$PROJECT_DIR$/Train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,8 +53,10 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python.DataLoad.executor&quot;: &quot;Run&quot;,
     &quot;Python.Train.executor&quot;: &quot;Run&quot;,
     &quot;Python.dataset_Oakville_V1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dataset_Oakville_v2.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
@@ -222,7 +230,23 @@
       <option name="project" value="LOCAL" />
       <updated>1727714798283</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="many bug fixes">
+      <option name="closed" value="true" />
+      <created>1727726217994</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1727726217994</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Simple_CNN.py is still broken">
+      <option name="closed" value="true" />
+      <created>1727727365884</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1727727365884</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,6 +275,8 @@
     <MESSAGE value="define validation_accuracy.py and fix bugs" />
     <MESSAGE value="update README.md" />
     <MESSAGE value="many bug fixes but still issue in Models.Simple_CNN.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="many bug fixes but still issue in Models.Simple_CNN.py" />
+    <MESSAGE value="many bug fixes" />
+    <MESSAGE value="Simple_CNN.py is still broken" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simple_CNN.py is still broken" />
   </component>
 </project>
