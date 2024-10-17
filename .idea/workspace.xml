@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c14388db-e3ce-44db-85fb-1db4bd8df4ee" name="Changes" comment="Simple_CNN.py is still broken">
+      <change afterPath="$PROJECT_DIR$/Models/R18.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Oakville-Land-Use-Classification.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Oakville-Land-Use-Classification.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/dataset_Oakville_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/dataset_Oakville_v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Simple_CNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Simple_CNN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/unet.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/unet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Train.py" beforeDir="false" afterPath="$PROJECT_DIR$/Train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,12 +32,12 @@
     &quot;assignee&quot;: &quot;DanGeospatial&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/DanGeospatial/Oakville-Land-Use-Classification&quot;,
-    &quot;accountId&quot;: &quot;1040b4ab-c031-45e2-873c-25f2a84d1a63&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/DanGeospatial/Oakville-Land-Use-Classification.git",
+    "accountId": "4ea0971f-cd39-4d56-b69b-b681f304f732"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -66,6 +64,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Models" />
       <recent name="D:\Projects\OakvilleLandUse\Oakville-Land-Use-Classification\Data" />
       <recent name="D:\Projects\OakvilleLandUse\Oakville-Land-Use-Classification" />
     </key>
@@ -73,7 +72,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-975db3bf15a3-31b6be0877a2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.18034.82" />
+        <option value="bundled-python-sdk-0e3be3396995-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23339.19" />
       </set>
     </attachedChunks>
   </component>

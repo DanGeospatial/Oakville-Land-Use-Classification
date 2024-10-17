@@ -8,8 +8,8 @@ from torchgeo.samplers import GridGeoSampler, RandomGeoSampler
 from torch.utils.data import random_split, DataLoader
 
 
-raster_location = 'I:/image/'
-vector_location = 'I:/mask/'
+raster_location = '/mnt/d/TWNOakvilleJuly22_23_psscene_analytic_sr_udm2/image/'
+vector_location = '/mnt/d/OakvilleFeatures/'
 
 loader_args = dict(num_workers=os.cpu_count(), pin_memory=True)
 

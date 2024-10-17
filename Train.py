@@ -9,27 +9,23 @@ import torch.nn as nn
 from torch import device, cuda, optim, autocast, save
 from torch.optim import Optimizer
 
-# Import other libraries
-
 # Import algorithms
-from Models.Simple_CNN import Net
+from Models.R18 import res18
 from utils.validation_accuracy import evaluate_accuracy
 from Data.dataset_Oakville_v2 import train_set, validation_set, getLength
 
 num_classes = 5
 num_bands = 4
 epochs = 40
-learning_rate = 1e-5
-weight_decay = 1e-8
-momentum = 0.999
+learning_rate = 0.01
 mem_args = dict(memory_format=torch.channels_last)
-out_path = "I:/LandUseClassification.pth"
+out_path = "/mnt/d/LandUseClassification.pth"
 
 
-def train_model(model, device_hw, epoch_num, lr, wd, mom):
+def train_model(model, device_hw, epoch_num, lr):
 
     # Set the optimizer and learning rate scheduler
-    optimizer = optim.RMSprop(model.parameters(), lr=lr, weight_decay=wd, momentum=mom)
+    optimizer = optim.SGD(model.parameters(), lr=lr)
     scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, 'min', patience=5)
     criterion = nn.CrossEntropyLoss()
     gradient_scaler = torch.amp.GradScaler()
@@ -83,7 +79,7 @@ if __name__ == '__main__':
     device = device('cuda' if cuda.is_available() else 'cpu')
     print(f"Training on {device}")
 
-    network = Net(num_bands, num_classes)
+    network = res18(num_classes)
     network = network.to(device)
 
     try:
@@ -91,9 +87,7 @@ if __name__ == '__main__':
             model=network,
             device_hw=device,
             epoch_num=epochs,
-            lr=learning_rate,
-            wd=weight_decay,
-            mom=momentum
+            lr=learning_rate
         )
     except cuda.OutOfMemoryError:
         print("Out of memory!")
