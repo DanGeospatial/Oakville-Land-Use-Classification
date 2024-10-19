@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c14388db-e3ce-44db-85fb-1db4bd8df4ee" name="Changes" comment="switch to deeplab rn50 still not working because nodata cells are not handled" />
+    <list default="true" id="c14388db-e3ce-44db-85fb-1db4bd8df4ee" name="Changes" comment="nodata cells are not handled and validation split turned off for testing">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/dataset_Oakville_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/dataset_Oakville_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train.py" beforeDir="false" afterPath="$PROJECT_DIR$/Train.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -272,7 +276,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729305351413</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="nodata cells are not handled and validation split turned off for testing">
+      <option name="closed" value="true" />
+      <created>1729305454512</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1729305454512</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -305,6 +317,7 @@
     <MESSAGE value="Simple_CNN.py is still broken" />
     <MESSAGE value="use resnet18 and switch to ubuntu 24" />
     <MESSAGE value="switch to deeplab rn50 still not working because nodata cells are not handled" />
-    <option name="LAST_COMMIT_MESSAGE" value="switch to deeplab rn50 still not working because nodata cells are not handled" />
+    <MESSAGE value="nodata cells are not handled and validation split turned off for testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="nodata cells are not handled and validation split turned off for testing" />
   </component>
 </project>

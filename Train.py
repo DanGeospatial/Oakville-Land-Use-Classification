@@ -16,8 +16,8 @@ from Data.dataset_Oakville_v2 import train_set, getLength
 
 num_classes = 4
 num_bands = 4
-epochs = 40
-learning_rate = 0.01
+epochs = 2
+learning_rate = 1e-5
 mem_args = dict(memory_format=torch.channels_last)
 out_path = "/mnt/d/LandUseClassification.pth"
 
@@ -27,7 +27,8 @@ def train_model(model, device_hw, epoch_num, lr):
     # Set the optimizer and learning rate scheduler
     optimizer = optim.SGD(model.parameters(), lr=lr)
     scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, 'min', patience=5)
-    criterion = nn.CrossEntropyLoss()
+    # !! ignore_index is very important !! this is how I handle nodata values (in a hacky way)
+    criterion = nn.CrossEntropyLoss(ignore_index=4)
     gradient_scaler = torch.amp.GradScaler()
 
     step_glob = 0
