@@ -3,7 +3,6 @@ This version has fixes for creating tiles and loading satellite images
 Use torchgeo to streamline this task
 """
 import os
-import matplotlib.pyplot as plt
 from torchgeo.datasets import RasterDataset, stack_samples
 from torchgeo.samplers import GridGeoSampler, RandomGeoSampler
 from torch.utils.data import DataLoader
@@ -25,7 +24,7 @@ oak_mask.is_image = False
 # get the intersection of two datasets because ps_image and oak_mask cover slightly different areas
 dataset = ps_image & oak_mask
 
-# sample from ps_image at 256 pixel tiles
+# sample from ps_image at 224 pixel tiles
 train_sampler = GridGeoSampler(ps_image, size=224, stride=64)
 # validation_sampler = GridGeoSampler(dataset , size=256, stride=64)
 
