@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c14388db-e3ce-44db-85fb-1db4bd8df4ee" name="Changes" comment="nodata cells are not handled and validation split turned off for testing">
+    <list default="true" id="c14388db-e3ce-44db-85fb-1db4bd8df4ee" name="Changes" comment="the model now runs but needs tuning and bug fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/dataset_Oakville_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/dataset_Oakville_v2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Train.py" beforeDir="false" afterPath="$PROJECT_DIR$/Train.py" afterDir="false" />
@@ -47,20 +47,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.DataLoad.executor&quot;: &quot;Run&quot;,
-    &quot;Python.R18.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Train.executor&quot;: &quot;Run&quot;,
-    &quot;Python.dataset_Oakville_V1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.dataset_Oakville_v2.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/speed/Downloads/Oakville - Copy.JPG&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.DataLoad.executor": "Run",
+    "Python.R18.executor": "Run",
+    "Python.Train.executor": "Run",
+    "Python.dataset_Oakville_V1.executor": "Run",
+    "Python.dataset_Oakville_v2.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/speed/Downloads/Oakville - Copy.JPG",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Models" />
@@ -71,7 +72,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-0e3be3396995-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23339.19" />
+        <option value="bundled-python-sdk-14705d77f0bb-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.25659.43" />
       </set>
     </attachedChunks>
   </component>
@@ -284,7 +285,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729305454512</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="nodata cells are not handled and validation split turned off for testing">
+      <option name="closed" value="true" />
+      <created>1729307965874</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1729307965874</updated>
+    </task>
+    <task id="LOCAL-00027" summary="the model now runs but needs tuning and bug fixes">
+      <option name="closed" value="true" />
+      <created>1729308008124</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1729308008124</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -318,6 +335,7 @@
     <MESSAGE value="use resnet18 and switch to ubuntu 24" />
     <MESSAGE value="switch to deeplab rn50 still not working because nodata cells are not handled" />
     <MESSAGE value="nodata cells are not handled and validation split turned off for testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="nodata cells are not handled and validation split turned off for testing" />
+    <MESSAGE value="the model now runs but needs tuning and bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="the model now runs but needs tuning and bug fixes" />
   </component>
 </project>

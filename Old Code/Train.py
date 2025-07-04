@@ -17,7 +17,7 @@ from Data.dataset_Oakville_v2 import train_set, getLength
 num_classes = 4
 num_bands = 4
 epochs = 2
-learning_rate = 1e-8
+learning_rate = 1e-5
 mem_args = dict(memory_format=torch.channels_last)
 out_path = "/mnt/d/LandUseClassification.pth"
 

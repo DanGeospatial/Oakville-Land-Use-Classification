@@ -11,10 +11,10 @@ from torch.utils.data import DataLoader
 raster_location = '/mnt/d/TWNOakvilleJuly22_23_psscene_analytic_sr_udm2/image/'
 mask_location = '/mnt/d/OakvilleMask/masks.tif'
 
-loader_args = dict(num_workers=os.cpu_count(), pin_memory=True)
+loader_args = dict(num_workers=os.cpu_count())
 
 validation_ratio = 0.20
-batch_size = 20
+batch_size = 40
 
 ps_image = RasterDataset(raster_location)
 oak_mask = RasterDataset(mask_location)
