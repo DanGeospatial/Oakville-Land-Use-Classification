@@ -28,7 +28,7 @@ def train_model(model, device_hw, epoch_num, weight_decay, lr):
             masks = masks.to(device=device_hw)
 
             # skip empty chips
-            if images.max() == 0 and images.min() == 0:
+            if masks.max() == 4 and masks.min() == 4:
                 continue
 
             with autocast(device_hw.type):
@@ -82,13 +82,13 @@ if __name__ == '__main__':
     device = device('cuda' if cuda.is_available() else 'cpu')
     print(f"Training on {device}")
 
-    epochs = 5
+    epochs = 13
     learning_rate = 0.0001
     decay = 0.01
     classes = 5
     bands = 3
 
-    model = FarSeg(backbone='resnet18', classes=classes, backbone_pretrained=True).to(device)
+    model = FarSeg(backbone='resnet34', classes=classes, backbone_pretrained=True).to(device)
 
     try:
         train_model(
