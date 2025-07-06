@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c14388db-e3ce-44db-85fb-1db4bd8df4ee" name="Changes" comment="the model now runs but needs tuning and bug fixes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/dataset_Oakville_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/dataset_Oakville_v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train.py" beforeDir="false" afterPath="$PROJECT_DIR$/Train.py" afterDir="false" />
+    <list default="true" id="c14388db-e3ce-44db-85fb-1db4bd8df4ee" name="Changes" comment="refactor to archive for rewrite">
+      <change afterPath="$PROJECT_DIR$/inference.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +40,7 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2iwRgbXrODNO3QvUAgqnqUUEqP8" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -58,12 +58,16 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/speed/Downloads/Oakville - Copy.JPG",
+    "last_opened_file_path": "/home/dan/PycharmProjects/Oakville-Land-Use-Classification",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Old Code" />
       <recent name="$PROJECT_DIR$/Models" />
       <recent name="D:\Projects\OakvilleLandUse\Oakville-Land-Use-Classification\Data" />
       <recent name="D:\Projects\OakvilleLandUse\Oakville-Land-Use-Classification" />
@@ -72,7 +76,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-14705d77f0bb-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.25659.43" />
+        <option value="bundled-python-sdk-53e2683a6804-9cdd278e9d02-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.26094.141" />
       </set>
     </attachedChunks>
   </component>
@@ -301,7 +305,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729308008124</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="refactor to archive for rewrite">
+      <option name="closed" value="true" />
+      <created>1751603527180</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1751603527180</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -336,6 +348,7 @@
     <MESSAGE value="switch to deeplab rn50 still not working because nodata cells are not handled" />
     <MESSAGE value="nodata cells are not handled and validation split turned off for testing" />
     <MESSAGE value="the model now runs but needs tuning and bug fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="the model now runs but needs tuning and bug fixes" />
+    <MESSAGE value="refactor to archive for rewrite" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor to archive for rewrite" />
   </component>
 </project>
