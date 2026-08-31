@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c14388db-e3ce-44db-85fb-1db4bd8df4ee" name="Changes" comment="Simple_CNN does not return correct format for CrossEntropyLoss">
+    <list default="true" id="c14388db-e3ce-44db-85fb-1db4bd8df4ee" name="Changes" comment="code refactoring">
+      <change beforePath="$PROJECT_DIR$/.idea/Oakville-Land-Use-Classification.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Oakville-Land-Use-Classification.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/dataset_Oakville_V1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Old Code/Data/dataset_Oakville_V1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/dataset_Oakville_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Old Code/Data/dataset_Oakville_v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inference.py" beforeDir="false" afterPath="$PROJECT_DIR$/Old Code/Inference.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Simple_CNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/Old Code/Models/Simple_CNN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/unet.py" beforeDir="false" afterPath="$PROJECT_DIR$/Old Code/Models/unet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Old Code/Plotter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train.py" beforeDir="false" afterPath="$PROJECT_DIR$/Old Code/Train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/DataLoad.py" beforeDir="false" afterPath="$PROJECT_DIR$/Old Code/utils/DataLoad.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/validation_accuracy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Old Code/utils/validation_accuracy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,22 +48,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.DataLoad.executor": "Run",
-    "Python.Train.executor": "Run",
-    "Python.dataset_Oakville_V1.executor": "Run",
-    "Python.dataset_Oakville_v2.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "Z:/Projects/WetlandClassification",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.DataLoad.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Train.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dataset_Oakville_V1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dataset_Oakville_v2.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;Z:/Projects/WetlandClassification&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="Z:\Projects\OakvilleLandUse\Oakville-Land-Use-Classification\Old Code" />
       <recent name="D:\Projects\OakvilleLandUse\Oakville-Land-Use-Classification\Data" />
       <recent name="D:\Projects\OakvilleLandUse\Oakville-Land-Use-Classification" />
     </key>
@@ -258,7 +253,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728495475534</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="code refactoring">
+      <option name="closed" value="true" />
+      <created>1787156039220</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1787156039220</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -290,6 +293,7 @@
     <MESSAGE value="many bug fixes" />
     <MESSAGE value="Simple_CNN.py is still broken" />
     <MESSAGE value="Simple_CNN does not return correct format for CrossEntropyLoss" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simple_CNN does not return correct format for CrossEntropyLoss" />
+    <MESSAGE value="code refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="code refactoring" />
   </component>
 </project>

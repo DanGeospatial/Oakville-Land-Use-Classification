@@ -14,6 +14,7 @@ def train_model(model, device_hw, epoch_num, weight_decay, lr):
     scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, 'min', patience=5)
     loss_fn = CrossEntropyLoss()
     gradient_scaler = torch.amp.GradScaler()
+    metric = MulticlassAccuracy(num_classes=classes, average='macro').to(device_hw)
 
     # begin training
     for epoch in range(epoch_num):
@@ -61,7 +62,6 @@ def train_model(model, device_hw, epoch_num, weight_decay, lr):
                     loss = loss_fn(test_pred, masks)
                     test_loss += loss
 
-                metric = MulticlassAccuracy(num_classes=classes, average='macro').to(device_hw)
                 pred = torch.argmax(test_pred, dim=1)
                 test_acc += metric(pred, masks)
 
