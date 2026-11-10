@@ -3,6 +3,7 @@ from torch import device, cuda, optim, autocast, save
 from torch.nn import CrossEntropyLoss
 from torchmetrics.classification import MulticlassAccuracy
 from torchgeo.models import FarSeg
+import random
 import numpy as np
 
 from loader import train_set, val_set
@@ -82,13 +83,27 @@ if __name__ == '__main__':
     device = device('cuda' if cuda.is_available() else 'cpu')
     print(f"Training on {device}")
 
+    # Set all seeds
+    seed = 32
+    np.random.seed(seed)
+    random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+
+    # Enable for reproducible runs
+    # torch.backends.cudnn.deterministic = True
+    # torch.backends.cudnn.benchmark = True
+
+    # Reduce precision
+    torch.set_float32_matmul_precision("high")
+
     epochs = 13
     learning_rate = 0.0001
     decay = 0.01
     classes = 5
     bands = 3
 
-    model = FarSeg(backbone='resnet34', classes=classes, backbone_pretrained=True).to(device)
+    model = FarSeg(backbone='resnet34', classes=classes).to(device)
 
     try:
         train_model(

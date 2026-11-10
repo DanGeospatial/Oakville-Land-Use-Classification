@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c14388db-e3ce-44db-85fb-1db4bd8df4ee" name="Changes" comment="code refactoring">
-      <change beforePath="$PROJECT_DIR$/.idea/Oakville-Land-Use-Classification.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Oakville-Land-Use-Classification.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="c14388db-e3ce-44db-85fb-1db4bd8df4ee" name="Changes" comment="think about improvements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +36,65 @@
     &quot;accountId&quot;: &quot;1040b4ab-c031-45e2-873c-25f2a84d1a63&quot;
   }
 }</component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0001702567952089" />
+      <entry key="MS500" value="1.1762872450605486" />
+      <entry key="S2" value="1.6479704827166668" />
+      <entry key="S5" value="1.8406633015798746" />
+      <entry key="S10" value="1.9168769282623894" />
+      <entry key="S30" value="1.9714870478824795" />
+      <entry key="S60" value="1.9856404252677533" />
+      <entry key="M2" value="1.9928111122285679" />
+      <entry key="M5" value="2.06464047992865" />
+      <entry key="M10" value="3.094791839988082" />
+      <entry key="M15" value="4.781797360622791" />
+      <entry key="M30" value="9.072439685300631" />
+      <entry key="H1" value="13.281261020330275" />
+      <entry key="H2" value="16.249475209014378" />
+      <entry key="H4" value="18.0151716961173" />
+      <entry key="D1" value="19.65286162382385" />
+      <entry key="W1" value="19.949993381631696" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="1.8378560474676963E-151" />
+      <entry key="S10" value="6.674007857092816E-76" />
+      <entry key="S30" value="1.7504961742571442E-25" />
+      <entry key="S60" value="7.205475911089173E-13" />
+      <entry key="M2" value="1.4680560513115498E-6" />
+      <entry key="M5" value="0.00897037151164777" />
+      <entry key="M10" value="0.1640359346156641" />
+      <entry key="M15" value="0.432175786082269" />
+      <entry key="M30" value="1.1386436923519465" />
+      <entry key="H1" value="1.848220569071239" />
+      <entry key="H2" value="2.3547095179162563" />
+      <entry key="H4" value="2.657842551113533" />
+      <entry key="D1" value="2.9400581086088122" />
+      <entry key="W1" value="2.991362624280518" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9527946662443234" />
+      <entry key="MS500" value="1.1637217430744478" />
+      <entry key="S2" value="1.6428581704903438" />
+      <entry key="S5" value="1.8382960406502629" />
+      <entry key="S10" value="1.9156295232224594" />
+      <entry key="S30" value="1.9710560105522261" />
+      <entry key="S60" value="1.98542293206129" />
+      <entry key="M2" value="1.9927032975202603" />
+      <entry key="M5" value="2.073490469745153" />
+      <entry key="M10" value="3.258134977878208" />
+      <entry key="M15" value="5.212795347447774" />
+      <entry key="M30" value="10.209562619165595" />
+      <entry key="H1" value="15.128256969536906" />
+      <entry key="H2" value="18.603407406637192" />
+      <entry key="H4" value="20.67257630932491" />
+      <entry key="D1" value="22.59283910625644" />
+      <entry key="W1" value="22.941344289696566" />
+    </decayedShown>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -48,20 +106,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.DataLoad.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Train.executor&quot;: &quot;Run&quot;,
-    &quot;Python.dataset_Oakville_V1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.dataset_Oakville_v2.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;Z:/Projects/WetlandClassification&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.DataLoad.executor": "Run",
+    "Python.Train.executor": "Run",
+    "Python.dataset_Oakville_V1.executor": "Run",
+    "Python.dataset_Oakville_v2.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "Z:/Projects/WetlandClassification",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="Z:\Projects\OakvilleLandUse\Oakville-Land-Use-Classification\Old Code" />
@@ -72,7 +137,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-0978a7220b69-9867c7d4c0a4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.28294.336" />
+        <option value="bundled-python-sdk-821f704e66d9-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.9437.214" />
       </set>
     </attachedChunks>
   </component>
@@ -261,8 +326,19 @@
       <option name="project" value="LOCAL" />
       <updated>1787156039220</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="think about improvements">
+      <option name="closed" value="true" />
+      <created>1788206944970</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1788206944971</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -294,6 +370,7 @@
     <MESSAGE value="Simple_CNN.py is still broken" />
     <MESSAGE value="Simple_CNN does not return correct format for CrossEntropyLoss" />
     <MESSAGE value="code refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="code refactoring" />
+    <MESSAGE value="think about improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="think about improvements" />
   </component>
 </project>

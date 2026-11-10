@@ -4,14 +4,14 @@ import os
 import numpy as np
 from torch.utils.data import DataLoader
 from torchgeo.datasets import RasterDataset, stack_samples, splits
-from torchgeo.samplers import RandomGeoSampler
+from torchgeo.samplers import GriddedPatchSampler, RandomPatchSampler
 
 
 image_path = '/mnt/d/LandUse/composite_RGB.tif'
 image_norm = '/mnt/d/LandUse/composite_norm.tif'
 mask_path = '/mnt/d/LandUse/mask_v1.tif'
 batch_size = 10
-slide = 224
+slide = 168
 size = 224
 loader_args = dict(num_workers=os.cpu_count(), pin_memory=True)
 
@@ -51,10 +51,10 @@ dataset = input_drone_image & drone_mask
 generator = torch.Generator().manual_seed(32)
 (train, val) = splits.random_grid_cell_assignment(dataset, [0.8, 0.2], generator=generator)
 
-train_sampler = RandomGeoSampler(train, size=size)
+train_sampler = RandomPatchSampler(train, size=size)
 train_set = DataLoader(train, batch_size=batch_size, sampler=train_sampler, collate_fn=stack_samples,
                        **loader_args)
-val_sampler = RandomGeoSampler(val, size=size)
+val_sampler = GriddedPatchSampler(val, size=size, stride=slide)
 val_set = DataLoader(val, batch_size=batch_size, sampler=val_sampler, collate_fn=stack_samples,
                      **loader_args)
 
